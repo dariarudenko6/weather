@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm"
+              />
+            </div>
+          </div>
+        </form>
+        <h1 id="city">
+            San Francisco
+        </h1>
+        <ul>
+          <li id="date"></li>
+          <li>
+            Partly Cloudy
+          </li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                alt="Cloudy icon"
+                class="weather-icon float-left"
+              />
+              <div class="float-left">
+                <span class="temperature" id="temperature">7</span
+                ><span class="units">
+                  <a href="#" id="celsius-link">°C</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>
+                Precipitation: 0%
+              </li>
+              <li>
+                Humidity: 92%
+              </li>
+              <li>
+                Wind: 9,77 km/h
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="WeatherForecast row">
+            <div class="col">
+              <div class="WeatherForecastPreview">
+                <div class="forecast-time">Sun</div>            
+                <img
+                src="https://ssl.gstatic.com/onebox/weather/48/rain.png"
+              />
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">0°</span>
+                  <span class="forecast-temperature-min">-6°</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                  <div class="WeatherForecastPreview">
+                    <div class="forecast-time">Mon</div>
+                    <img
+                       src="https://ssl.gstatic.com/onebox/weather/48/rain.png"
+                    />
+                    <div class="forecast-temperature">
+                      <span class="forecast-temperature-max">-3°</span>
+                      <span class="forecast-temperature-min">-8°</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                      <div class="WeatherForecastPreview">
+                        <div class="forecast-time">Tue</div>
+                        <img
+                        src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                     />
+                        <div class="forecast-temperature">
+                          <span class="forecast-temperature-max">-6°</span>
+                          <span class="forecast-temperature-min">-9°</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="WeatherForecastPreview">
+                        <div class="forecast-time">Wed</div>
+                        <img
+                        src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                     />
+                        <div class="forecast-temperature">
+                          <span class="forecast-temperature-max">0°</span>
+                          <span class="forecast-temperature-min">-5°</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                          <div class="WeatherForecastPreview">
+                            <div class="forecast-time">Thu</div>
+                            <img
+                            src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                         />
+                            <div class="forecast-temperature">
+                              <span class="forecast-temperature-max">-4°</span>
+                              <span class="forecast-temperature-min">-9°</span>
+                            </div>
+                          </div>
+                        </div>
+                        <footer>
+                          This project was coded by Daria Rudenko and is 
+                          <a href="https://github.com/shecodesio/weather" target="_blank" rel="noopener noreferrer">open-sourced on GitHub</a>
+                        </footer>
+                      </div>
+                    </div>
+                  </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
